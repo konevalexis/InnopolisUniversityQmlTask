@@ -1,0 +1,8 @@
+/release/*
+/debug/*
+InnopolisUniversityQmlTask.pro.user
+Makefile.Release
+Makefile.Debug
+Makefile
+qml_qmlcache.qrc
+.qmake.stash

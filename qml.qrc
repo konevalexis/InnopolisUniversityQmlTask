@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>test.json</file>
+        <file>JsonListModel.qml</file>
+        <file>UIComponents/MyCheckBox.qml</file>
+        <file>UIComponents/MyTextField.qml</file>
+        <file>Resources/close_icon.svg</file>
+        <file>UIComponents/MyButton.qml</file>
+        <file>Resources/checkmark.svg</file>
+        <file>convert.js</file>
+    </qresource>
+</RCC>

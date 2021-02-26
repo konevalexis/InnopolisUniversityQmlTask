@@ -8,6 +8,8 @@ import "./UIComponents"
 Window {
     width: 400
     height: 480
+    minimumHeight: 480
+    minimumWidth: 400
     visible: true
     title: qsTr("JSON to model converter")
 
@@ -46,9 +48,15 @@ Window {
 
     ListView{
         id: jsonList
-        anchors.centerIn: parent
-        width: 400
-        height: 200
+        anchors{
+            left: parent.left
+            top: fileName.bottom
+            right: parent.right
+            bottom: openBtn.top
+
+            margins: 10
+        }
+
         clip: true
 
         model: jsonListModel
@@ -102,6 +110,7 @@ Window {
 
 
     MyButton{
+        id: openBtn
         anchors{
             left: parent.left
             bottom: parent.bottom

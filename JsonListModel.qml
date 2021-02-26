@@ -47,7 +47,7 @@ ListModel {
                     jsonObject[get(i).key] = Number(get(i).value)
                     break
                 case 'float' :
-                    if(Number(currentValue) % 1 === 0 || Number.isNaN(Number(currentValue)) || Number(currentValue) === null){
+                    if(Number.isNaN(Number(currentValue)) || Number(currentValue) === null){
                         console.error("value of " + Object.keys(jsonListModel.jsonObject)[i] + " is not correct")
                         return
                     }
